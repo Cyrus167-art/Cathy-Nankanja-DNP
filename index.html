@@ -147,7 +147,38 @@ nav a {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+}
 
+/* IMAGE */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TEXT OVERLAY */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.5);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+  .card img {
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
 /* FOOTER */
 footer {
   background: #0f766e;
@@ -209,11 +240,26 @@ footer {
 
 <!-- SERVICES -->
 <section class="section">
+  <section class="section">
   <h2>Services</h2>
+
   <div class="cards">
-    <div class="card">Community Health Education</div>
-    <div class="card">Patient Consultation</div>
-    <div class="card">Nursing Mentorship</div>
+
+    <div class="card">
+      <img src="communityhealtheducation.png" alt="Community Health">
+      <div class="overlay">Community Health Education</div>
+    </div>
+
+    <div class="card">
+      <img src="patientconsultation.png" alt="Consultation">
+      <div class="overlay">Patient Consultation</div>
+    </div>
+
+    <div class="card">
+      <img src="nursementorship.jpg" alt="Mentorship">
+      <div class="overlay">Nursing Mentorship</div>
+    </div>
+
   </div>
 </section>
 
