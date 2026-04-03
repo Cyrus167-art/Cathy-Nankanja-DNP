@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CathyCare | Cathy Nankanja, DNP</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f9f9;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #0f766e;
+  color: white;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+  url('https://images.unsplash.com/photo-1580281657521-4c3e8f0b70c7');
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero button {
+  padding: 12px 20px;
+  background: #d946ef;
+  border: none;
+  color: white;
+  margin-top: 10px;
+}
+
+/* SECTION */
+.section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 260px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+  background: #0f766e;
+  color: white;
+  padding: 30px;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <h2>CathyCare</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Cathy Nankanja, DNP</h1>
+  <p>Empowering Health. Educating Communities.</p>
+  <button>Book Consultation</button>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+  <h2>About Cathy</h2>
+  <p>Doctor of Nursing Practice passionate about community health, patient education, and empowering future nurses.</p>
+</section>
+
+<!-- SERVICES -->
+<section class="section">
+  <h2>Services</h2>
+  <div class="cards">
+    <div class="card">Community Health Education</div>
+    <div class="card">Patient Consultation</div>
+    <div class="card">Nursing Mentorship</div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="section">
+  <h2>Health Tips & Blog</h2>
+  <div class="cards">
+    <div class="card">Healthy Living Tips</div>
+    <div class="card">Preventive Care</div>
+    <div class="card">Nursing Insights</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <h2>Let’s Work Together</h2>
+  <button>Contact Cathy</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 CathyCare | Cathy Nankanja, DNP</p>
+</footer>
+
+</body>
+</html>
